@@ -198,6 +198,7 @@ void Edit_f()
 			char ch;
 			cout << "\n\n\tEdit ";
 
+			cout << "\n\tName: " << goods_a[i].name;			
 			cout << "\n\tEdit name?\t(y/n)\n\t";	cin >> ch;
 			if (ch == 'y')
 			{
@@ -205,6 +206,7 @@ void Edit_f()
 				goods_a[i].name[0] = NameCorrector(goods_a[i].name[0]);
 			}
 
+			cout << "\n\tShop: " << goods_a[i].shop;
 			cout << "\n\tEdit shop?\t(y/n)\n\t";	cin >> ch;
 			if (ch == 'y')
 			{
@@ -212,18 +214,21 @@ void Edit_f()
 				goods_a[i].shop[0] = NameCorrector(goods_a[i].shop[0]);
 			}
 
+			cout << "\n\tPrice: " << goods_a[i].price;
 			cout << "\n\tEdit price?\t(y/n)\n\t";	cin >> ch;
 			if (ch == 'y')
 			{
 				cout << "\n\tEnter new price: ";	cin >> goods_a[i].price;
 			}
 
+			cout << "\n\tAmount: " << goods_a[i].amount;
 			cout << "\n\tEdit Amount?\t(y/n)\n\t";	cin >> ch;
 			if (ch == 'y')
 			{
 				cout << "\n\tEnter new Amount: ";	cin >> goods_a[i].amount;
 			}
 			
+			cout << "\n\tMeasurement: " << goods_a[i].meas;
 			cout << "\n\tEdit Measurement?\t(y/n)\n\t";	cin >> ch;
 			if (ch == 'y')
 			{
